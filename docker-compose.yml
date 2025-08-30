@@ -18,9 +18,8 @@ services:
         condition: on-failure
 
   app:
-    image: my-php-app:latest
     build:
-      context: .
+      context: ./app_php
       dockerfile: Dockerfile
     deploy:
       replicas: 2
